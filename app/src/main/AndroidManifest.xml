@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="com.faendir.lightning_launcher.appdrawer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_appdrawer"
+        android:label="@string/app_name">
+        <activity
+            android:name=".setup"
+            android:exported="true"
+            android:icon="@drawable/ic_appdrawer"
+            android:label="@string/browse_name">
+            <intent-filter>
+                <action android:name="net.pierrox.lightning_launcher.script.ENUMERATE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".DataProvider"
+            android:authorities="com.faendir.lightning_launcher.appdrawer.provider"
+            android:enabled="true"
+            android:exported="true" tools:ignore="ExportedContentProvider"/>
+    </application>
+
+</manifest>

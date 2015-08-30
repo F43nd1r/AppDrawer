@@ -1,0 +1,24 @@
+<resources>
+    <!-- This is the package name -->
+    <string name="app_name">LLScript AppDrawer</string>
+
+    <!-- This is the name displayed when browsing available script package -->
+    <string name="browse_name">App Drawer</string>
+
+    <!-- This is the name of the script once loaded in the launcher (visible in the script editor and the script menus) -->
+    <string name="script_name">Setup</string>
+    <string name="pref_columns">columns</string>
+    <string name="pref_rows">rows</string>
+    <string name="pref_iconPack">iconpack</string>
+    <string name="pref_usePack">usePack</string>
+    <string name="title_rows">Rows</string>
+    <string name="title_columns">Columns</string>
+    <string name="title_usePack">Use Icon Pack</string>
+    <string name="title_iconPack">Icon Pack</string>
+    <string name="text_howTo">Navigate to the container you want to use as app drawer\nLong press on
+        an empty space\nSelect Scripts, Load a script, App Drawer\n\nChanging Settings might require a reload.
+    </string>
+    <string name="title_howTo">How to use</string>
+    <string name="pref_groupItems">group_items</string>
+    <string name="title_groupItems">Group items by starting letter</string>
+</resources>

@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Settings">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="@string/title_groupItems"
+            android:key="@string/pref_groupItems"/>
+        <com.faendir.lightning_launcher.appdrawer.NumberPreference
+            android:defaultValue="0"
+            android:key="@string/pref_rows"
+            android:title="@string/title_rows"/>
+        <com.faendir.lightning_launcher.appdrawer.NumberPreference
+            android:defaultValue="5"
+            android:key="@string/pref_columns"
+            android:title="@string/title_columns"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_usePack"
+            android:title="@string/title_usePack"/>
+        <com.faendir.lightning_launcher.appdrawer.IconPackPreference
+            android:key="@string/pref_iconPack"
+            android:title="@string/title_iconPack"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_howTo">
+        <Preference android:enabled="false"
+                    android:summary="@string/text_howTo"/>
+    </PreferenceCategory>
+</PreferenceScreen>
